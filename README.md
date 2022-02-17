@@ -42,3 +42,4 @@ spec:
 ```
 oc create secret docker-registry ibm-entitlement-key --docker-username=cp --docker-password="<your-entitlement-key>" --docker-server="cp.icr.io" -n <target-namespace>
 ```
+6. Install Event Streams operator and create an instance
