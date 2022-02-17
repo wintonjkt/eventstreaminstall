@@ -4,6 +4,6 @@
   
 2. {OpenShift 4.6) Create the CA certificate to a ConfigMap called kube-root-ca.crt in the project (namespace)  
 ```
-ca.crt/' | sed 's/namespace: openshift-config-managed/namespace: <target-namespace>/' | oc create -f -
+oc get cm default-ingress-cert --namespace=openshift-config-managed -o yaml | sed 's/name: default-ingress-cert/name: kube-root-ca.crt/' | sed 's/namespace: openshift-config-managed/namespace: <target-namespace>/' | oc create -f -
 ```
 3. 
