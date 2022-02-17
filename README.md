@@ -22,3 +22,19 @@ spec:
      registryPoll:
        interval: 45m
 ```
+4. Add IBM Common Services Operator Catalog
+```
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+   name: opencloud-operators
+   namespace: openshift-marketplace
+spec:
+   displayName: "IBMCS Operators"
+   publisher: IBM
+   sourceType: grpc
+   image: icr.io/cpopen/ibm-common-service-catalog:latest
+   updateStrategy:
+     registryPoll:
+       interval: 45m
+```
