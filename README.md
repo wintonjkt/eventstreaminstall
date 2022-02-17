@@ -38,3 +38,7 @@ spec:
      registryPoll:
        interval: 45m
 ```
+5. Create image pull secret in the project 
+```
+oc create secret docker-registry ibm-entitlement-key --docker-username=cp --docker-password="<your-entitlement-key>" --docker-server="cp.icr.io" -n <target-namespace>
+```
