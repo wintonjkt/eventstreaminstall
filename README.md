@@ -61,7 +61,7 @@ gradle clean && gradle build
 ```
   5. Run the sample app
 ```
-java -jar ./build/libs/kafka-java-console-sample-2.0.jar <kafka_brokers_sasl> <api_key> -consumerple-2.0.jar 
+java -jar ./build/libs/kafka-java-console-sample-2.0.jar <kafka_brokers_sasl> <api_key> -consumer
 ```
   Use the kafka_brokers_sasl from the Service credentials created in Step 2. Use all the kafka_brokers_sasl listed in the Service credentials that you created.
   The kafka_brokers_sasl must be formatted as "host:port,host2:port2".
